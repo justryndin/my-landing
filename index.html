@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лендинг Python-разработчика</title>
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container header__content">
+      <!-- Изображение в шапке -->
+      <div class="header__image-wrapper">
+        <img src="img/telegram-python.jpg" alt="Telegram Python" class="header__image">
+      </div>
+
+      <!-- Основная информация -->
+      <h1 class="header__title">Я — Иван Рындин, Python-разработчик</h1>
+      <p class="header__subtitle">
+        Специализируюсь на разработке Telegram-ботов и создании простых лендингов.
+      </p>
+
+      <!-- Меню -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основное содержимое -->
+  <main>
+    <!-- Блок "Обо мне" -->
+    <section id="about" class="about">
+      <div class="container about__content">
+        <h2>Обо мне</h2>
+        <p>
+          Привет! Я занимаюсь серверной разработкой на Python и люблю создавать полезные
+          инструменты, которые автоматизируют рабочие процессы. Моя цель — писать чистый и
+          понятный код, чтобы ваши проекты работали быстро и без сбоев.
+        </p>
+        <p>
+          В работе активно использую <strong>Django</strong> и <strong>Flask</strong>, а также
+          библиотеки для Telegram — <strong>aiogram</strong> и <strong>aiogram dialog</strong>.
+          Разрабатываю удобные боты для маркетинга, техподдержки и любых других задач.
+          Помимо этого, могу создать простой и современный лендинг для презентации вашего
+          продукта или услуги.
+        </p>
+      </div>
+    </section>
+
+    <!-- Блок "Услуги" -->
+    <section id="services" class="services">
+      <div class="container services__content">
+        <h2>Мои услуги</h2>
+        <div class="services__list">
+          <article class="service-item">
+            <h3>Разработка Telegram-ботов</h3>
+            <p>
+              От простых рассылок до сложных диалоговых систем. Работа с базами данных,
+              интеграция с CRM, платёжными системами и многое другое.
+            </p>
+          </article>
+          <article class="service-item">
+            <h3>Создание лендингов</h3>
+            <p>
+              Верстка адаптивных одностраничных сайтов (HTML, CSS, JS). Настройка форм,
+              а также интеграция аналитики для отслеживания трафика.
+            </p>
+          </article>
+          <article class="service-item">
+            <h3>Интеграция с CRM</h3>
+            <p>
+              Автоматическая отправка лидов и заявок из ваших ботов и лендингов
+              прямо в CRM-систему. Настройка вебхуков и API.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "Контакты" -->
+    <section id="contacts" class="contacts">
+      <div class="container contacts__content">
+        <h2>Свяжитесь со мной</h2>
+        <p>
+          Оставьте заявку или напишите — я отвечу в кратчайшие сроки. <br>
+          <strong>Телефон:</strong> <a href="tel:+79663610223">+7 966 361 0223</a> <br>
+          <strong>Telegram:</strong> <a href="https://t.me/iaryndin" target="_blank">@iaryndin</a>
+        </p>
+
+        <!-- Форма отправки писем -->
+        <!-- mailto: открывает почтовый клиент, для реальной отправки на сервер нужен бэкенд -->
+        <form class="contact-form" action="mailto:iryndin@iryndin.ru" method="POST" enctype="text/plain">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+          <label for="email">Ваш Email</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" placeholder="Коротко опишите ваш проект или вопрос" required></textarea>
+
+          <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <div class="container footer__content">
+      <p>&copy; 2025. Разработка и дизайн — Иван Рындин, Python-разработчик.</p>
+      <p>Почта: <a href="mailto:iryndin@iryndin.ru">iryndin@iryndin.ru</a></p>
+    </div>
+  </footer>
+</body>
+</html>
